@@ -1,6 +1,6 @@
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-import Products from "../components/Products";
+import Footer from "../components/ScrollSections.tsx/Footer";
+import NavBar from "../components/ScrollSections.tsx/NavBar";
+import Products from "../components/pages/Products";
 
 export default function ProductsPage() {
   return (

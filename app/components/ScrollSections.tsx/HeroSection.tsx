@@ -22,10 +22,10 @@ import Link from "next/link";
   <div className="absolute inset-0 flex items-center justify-center text-center text-white">
     <div>
       <h1 className="text-5xl font-bold mb-4">
-        Welcome to jordan Cart 
+        Welcome to E-mart 
       </h1>
 
-      <h2 className="text-4xl font-semibold mb-4">
+      <h2 className="text-3xl font-semibold mb-4 text-yellow-500">
          Your One-Stop Tech Store
       </h2>
 

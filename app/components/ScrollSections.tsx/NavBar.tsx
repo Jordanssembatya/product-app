@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { FiMenu, FiX, FiSearch } from "react-icons/fi";
+import { FiLogIn, FiMenu, FiX, FiSearch } from "react-icons/fi";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,9 +11,12 @@ export default function Navbar() {
     <div className="navbar sticky top-0 z-50 bg-slate-900 shadow-md px-4">
 
       {/* Logo */}
-      <div className="flex-1">
-        <Link href="/" className="text-white text-xl font-bold">
-          Jordan Cart
+      <div className="flex-1 flex items-center gap-1">
+        <Link href="/">
+          <img src="websitelogo.png" className="rounded-lg h-10 w-auto" alt="" />
+        </Link>
+         <Link href="/" className="text-white text-lg font-bold hover:text-yellow-500">
+          E-mart
         </Link>
       </div>
 
@@ -28,6 +31,10 @@ export default function Navbar() {
           Products
         </Link>
 
+         <Link href="/products" className="text-white hover:underline hover:text-yellow-500">
+          Categories
+        </Link>
+
         <Link href="/#about" className="text-white hover:underline hover:text-yellow-500">
           About
         </Link>
@@ -39,7 +46,7 @@ export default function Navbar() {
 
 
       {/* Search Bar */}
-      <div className="hidden sm:flex flex-1 justify-end">
+      <div className="hidden sm:flex items-center gap-3 ml-auto">
         <div className="relative">
           <input
             type="text"
@@ -48,11 +55,18 @@ export default function Navbar() {
           />
 
           <button className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500">
-            <FiSearch size={18}/>
+            <FiSearch size={18} />
           </button>
         </div>
-      </div>
 
+        <Link
+          href="/login"
+          className="flex items-center gap-2 rounded-full border border-yellow-500 bg-yellow-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-sm transition hover:bg-yellow-400"
+        >
+          <FiLogIn size={16} />
+          <span>Login</span>
+        </Link>
+      </div>
 
       {/* Mobile Menu Button */}
       <button
@@ -73,6 +87,14 @@ export default function Navbar() {
 
           <Link href="/products" className="text-white">
             Products
+          </Link>
+
+          <Link
+            href="/login"
+            className="flex items-center gap-2 rounded-full bg-yellow-500 px-4 py-2 text-sm font-semibold text-slate-950"
+          >
+            <FiLogIn size={16} />
+            <span>Login</span>
           </Link>
 
           <Link href="/#about" className="text-white">

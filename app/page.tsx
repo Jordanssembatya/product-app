@@ -1,13 +1,13 @@
-import NavBar from "./components/NavBar";
-import HeroSection from "./components/HeroSection";
-import WhyChoose from "./components/WhyChoose";
-import FeaturedProducts from "./components/FeaturedProducts";
-import SecuritySolutions from "./components/SecuritySolutions";
-import SoftwareServices from "./components/SoftwareServices";
-import HowItWorks from "./components/HowItWorks";
-import Testimonials from "./components/Testimonials";
-import CallToAction from "./components/CallToAction";
-import Footer from "./components/Footer";
+import NavBar from "./components/ScrollSections.tsx/NavBar";
+import HeroSection from "./components/ScrollSections.tsx/HeroSection";
+import WhyChoose from "./components/ScrollSections.tsx/WhyChoose";
+import FeaturedProducts from "./components/ScrollSections.tsx/FeaturedProducts";
+import SecuritySolutions from "./components/ScrollSections.tsx/SecuritySolutions";
+import SoftwareServices from "./components/ScrollSections.tsx/SoftwareServices";
+import HowItWorks from "./components/ScrollSections.tsx/HowItWorks";
+import Testimonials from "./components/ScrollSections.tsx/Testimonials";
+import CallToAction from "./components/ScrollSections.tsx/CallToAction";
+import Footer from "./components/ScrollSections.tsx/Footer";
 
 export default function Home() {
   return (
